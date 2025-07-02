@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+
+body{
+    background-color: black;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}

@@ -20,17 +20,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
-          <Link href="/">Home</Link> |{" "}
-          <Link href="/about">About</Link> |{" "}
-          <Link href="/blog">Blog</Link> |{" "}
-          <Link href="/profile">Profile</Link>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <header className="py-7 px-20] container">
+          <div className="flex justify-between items-center">
+            <div className="text-white text-[36px] font-bold leading-[47px] font-['DM_Sans']">
+              <Link href="/">Azizbek</Link>
+            </div>
 
-        </nav>
-        <main style={{ padding: "1rem" }}>{children}</main>
+            <nav>
+              <ul className="flex">
+                <li className="ml-6 text-[25px] font-semibold font-['Roboto'] text-[#535353] hover:text-white duration-500">
+                  <Link href="/about">About</Link>
+                </li>
+                <li className="ml-6 text-[25px] font-semibold font-['Roboto'] text-[#535353] hover:text-white duration-500">
+                  <Link href="/services">Services</Link>
+                </li>
+                <li className="ml-6 text-[25px] font-semibold font-['Roboto'] text-[#535353] hover:text-white duration-500">
+                  <Link href="/contact">Contact</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        {/* Main Content */}
+        <main className="p-4">{children}</main>
       </body>
     </html>
   );
