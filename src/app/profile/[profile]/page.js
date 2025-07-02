@@ -1,5 +1,3 @@
-// app/profile/[username]/page.js
-
 const fakeUsers = {
   azizbek: {
     name: 'Azizbek Hafizov',
@@ -18,7 +16,6 @@ const fakeUsers = {
   },
 };
 
-// 🟢 Dynamic metadata:
 export function generateMetadata({ params }) {
   const user = fakeUsers[params.username];
 
@@ -35,7 +32,6 @@ export function generateMetadata({ params }) {
   };
 }
 
-// 🟢 Page component:
 export default function ProfilePage({ params }) {
   const user = fakeUsers[params.username];
 

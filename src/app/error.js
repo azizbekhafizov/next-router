@@ -9,7 +9,7 @@ export default function Error({ error, reset }) {
 
   return (
     <div>
-      <h1>⚠️ Xatolik yuz berdi</h1>
+      <h1> Xatolik yuz berdi</h1>
       <p>{error.message}</p>
       <button onClick={() => reset()}>Qayta urinish</button>
     </div>

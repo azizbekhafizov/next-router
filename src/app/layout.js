@@ -26,9 +26,8 @@ export default function RootLayout({ children }) {
         <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
           <Link href="/">Home</Link> |{" "}
           <Link href="/about">About</Link> |{" "}
-          <Link href="/contact">Contact</Link> |{" "}
           <Link href="/blog">Blog</Link> |{" "}
-          <Link href="/profile/azizbek">Profile</Link>
+          <Link href="/profile">Profile</Link>
 
         </nav>
         <main style={{ padding: "1rem" }}>{children}</main>
