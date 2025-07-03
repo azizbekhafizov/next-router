@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
 
             <nav>
               <ul className="flex">
-                <li className="ml-6 text-[25px] font-semibold font-['Roboto'] text-[#535353] hover:text-white duration-500">
-                  <Link href="/about">About</Link>
+                <li className="ml-6 text-[22px] font-semibold font-['Roboto'] text-[#535353] hover:text-white duration-500">
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="ml-6 text-[25px] font-semibold font-['Roboto'] text-[#535353] hover:text-white duration-500">
                   <Link href="/services">Services</Link>

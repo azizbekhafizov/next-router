@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="px-32 py-[300px] flex justify-between items-center">
+    <div className="px-32 py-[70px] flex justify-between items-center">
       <div>
         <h1 className="font-['DM_Sans'] font-bold text-[48px] leading-[62px] text-white mb-4">
           Hi, I am <br /> Khafizov Azizbek
@@ -33,7 +33,7 @@ export default function AboutPage() {
         <img
           src="/image.png"
           alt="About"
-          className="w-[650px] rounded-full"
+          className="w-[550px] rounded-full"
         />
       </div>
     </div>
